@@ -19,22 +19,15 @@
         <param name="colnames" type="boolean" label="The first line of your dataframe represents the names of columns ?"/>
     </inputs>
     <outputs>
-        <data name="output" from_work_dir="Summary.txt" format="txt"/>
+        <data name="output" from_work_dir="filename.txt" format="txt"/>
     </outputs>
     <tests>
         <test>
-            <param name="input" value="catch.txt"/>
+            <param name="input" value="test_file.txt"/>
             <param name="separator" value=""/>
             <param name="decimal" value="."/>
             <param name="colnames" value="false"/>
-            <output name="output" value="Summary_catch.txt"/>
-        </test>
-        <test>
-            <param name="input" value="dstns.txt"/>
-            <param name="separator" value=""/>
-            <param name="decimal" value="."/>
-            <param name="colnames" value="false"/>
-            <output name="output" value="Summary_dstns.txt"/>
+            <output name="output" value="out_file.txt"/>
         </test>
     </tests>
     <help><![CDATA[
@@ -46,8 +39,8 @@ Compute a summary from a datatable
     ]]></help>
     <citations>
         <citation type="bibtex">
-        @unpublished{ecoinfofair,
-        title={ Tool ecoinfofair },
+        @unpublished{template,
+        title={ Tool },
         author={Coline Royaux}
         }
         </citation>
