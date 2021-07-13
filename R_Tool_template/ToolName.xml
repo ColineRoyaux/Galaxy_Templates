@@ -1,0 +1,56 @@
+<tool id="tool_summary" name="Compute summary" version="0.0">
+    <description>Compute a summary of your dataframe</description> 
+    <requirements>
+    </requirements>
+    <command detect_errors="exit_code"><![CDATA[
+        Rscript
+         '$__tool_directory__/ExeToolName.r'
+         '$input'
+         '$separator'
+         '$decimal'
+         '$colnames'
+         '$output'
+    ]]>
+    </command>
+    <inputs>
+        <param name="input" type="data" format="txt" label="Input table"/>
+        <param name="separator" type="text" label="What character is the separator in your dataframe?"/>
+        <param name="decimal" type="text" label="What character marks the decimal in your dataframe?"/>
+        <param name="colnames" type="boolean" label="The first line of your dataframe represents the names of columns ?"/>
+    </inputs>
+    <outputs>
+        <data name="output" from_work_dir="Summary.txt" format="txt"/>
+    </outputs>
+    <tests>
+        <test>
+            <param name="input" value="catch.txt"/>
+            <param name="separator" value=""/>
+            <param name="decimal" value="."/>
+            <param name="colnames" value="false"/>
+            <output name="output" value="Summary_catch.txt"/>
+        </test>
+        <test>
+            <param name="input" value="dstns.txt"/>
+            <param name="separator" value=""/>
+            <param name="decimal" value="."/>
+            <param name="colnames" value="false"/>
+            <output name="output" value="Summary_dstns.txt"/>
+        </test>
+    </tests>
+    <help><![CDATA[
+==================================
+Compute a summary from a datatable
+==================================
+
+**HELP**
+    ]]></help>
+    <citations>
+        <citation type="bibtex">
+        @unpublished{ecoinfofair,
+        title={ Tool ecoinfofair },
+        author={Coline Royaux}
+        }
+        </citation>
+    </citations>
+</tool>
+
