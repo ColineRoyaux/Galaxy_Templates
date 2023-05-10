@@ -6,8 +6,9 @@
 #################################
 
 #####Packages : None
+#suppressMessages(library(#packageName#))
 
-#####Load arguments
+#####Load arguments provided trough interface in the same order as written in the <command> flag of the XML
 
 args = commandArgs(trailingOnly=TRUE)
 
@@ -26,12 +27,11 @@ if (length(args)==0)
 if (HR == "false"){ HR <- FALSE } else { HR <- TRUE }
 
 #####Import data
-Data <- read.table(Table,sep=sep,dec=dec,header=HR,encoding="UTF-8")
-
+Data <- read.table(Table, sep = sep, dec = dec, header = HR, encoding = "UTF-8")
 
 #####Your analysis : write your generalized executive steps 
 
-
+output
 
 #####Write output in a file
-write(sum, "filename.txt")
+write(output, "filename.txt")
