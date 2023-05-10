@@ -1,6 +1,7 @@
-<tool id="tool_summary" name="Compute summary" version="0.0">
-    <description>Compute a summary of your dataframe</description> 
+<tool id="tool_template" name="Name of tool" version="0.0">
+    <description>Describe your tool</description> 
     <requirements>
+        <!--<requirement type="package" version="0.0">r-packageName</requirement>-->
     </requirements>
     <command detect_errors="exit_code"><![CDATA[
         Rscript
@@ -31,9 +32,9 @@
         </test>
     </tests>
     <help><![CDATA[
-==================================
-Compute a summary from a datatable
-==================================
+=========
+Tool name
+=========
 
 **HELP**
     ]]></help>
