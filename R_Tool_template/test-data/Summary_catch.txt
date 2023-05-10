@@ -1,7 +1,0 @@
-       V1              V2             V3                V4          
- Min.   :60.00   Min.   :1.00   Min.   :  66141   Min.   :  238175  
- 1st Qu.:65.75   1st Qu.:1.75   1st Qu.: 283546   1st Qu.: 1071482  
- Median :71.50   Median :2.50   Median : 570384   Median : 2091836  
- Mean   :71.12   Mean   :2.50   Mean   : 799985   Mean   : 3038268  
- 3rd Qu.:76.25   3rd Qu.:3.25   3rd Qu.: 992670   3rd Qu.: 3728711  
- Max.   :82.00   Max.   :4.00   Max.   :6995585   Max.   :26146678  
