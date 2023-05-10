@@ -1,0 +1,19 @@
+categories:
+    - Ecology
+description: Describe your workflow
+long_description: |
+  Describe more
+name: Workflow name
+owner: ecology 
+remote_repository_url: https://github.com/ColineRoyaux/Galaxy_Templates
+type: unrestricted
+
+repositories:
+  tool_tempalte:
+    description: Describe tool
+    owner: ecology
+    include:
+      - ToolName.xml
+      - ExeToolName.r
+      - test-data/test_file.tabular
+      - test-data/out_file.tabular
