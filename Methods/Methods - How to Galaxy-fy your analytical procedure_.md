@@ -5,7 +5,7 @@ Analyses are rarely computed only once. Any analysis with a generalisation poten
 Whether one wants to design a new analysis directly on Galaxy or has already an established analytical procedure and wants to adapt it on Galaxy to make it easier to review and reuse, the following steps are approximately the same. As Galaxy already is a workflow-oriented platform with atomisation of steps, “atoms” of the analysis are apparent while building the analysis on Galaxy.
 The Galaxy platform offers many options that can be explored using the guided tours of the interface (on the welcome page or tab “Help – Interactive Tours”). Several tutorials are also available on the Galaxy Training Network (https://training.galaxyproject.org) to learn how to use Galaxy (e.g. topics “Introduction to Galaxy Analyses”, “Using Galaxy and Managing your Data”). Main steps of the implementation of an analytical procedure on Galaxy as a user are represented on figure 4.
 
-![](https://github.com/ColineRoyaux/Galaxy_Templates/blob/main/Methods/Fig/User_guidelines_no_link_i.tif)
+![](https://github.com/ColineRoyaux/Galaxy_Templates/blob/main/Methods/Fig/User_guidelines_no_link_i.png)
 >Figure 4 - Decision tree and framework for Galaxy users relying on existing tools and workflows. The orange boxes represent actions. The blue boxes represent possible situations one may encounter during the procedure. The red boxes represent steps where one could stop, share the work, and then attain better reproducibility and FAIRness. Letters at the top left of boxes indicate which paragraph it refers to in the text.
 >Links: (1) https://toolshed.g2.bx.psu.edu (2) https://usegalaxy-eu.github.io/posts/2020/08/22/three-steps-to-galaxify-your-tool 
 (3) https://matrix.to (4) https://github.com/galaxyecology
@@ -50,7 +50,7 @@ If there are still gaps in the analytical procedure that none of the existing to
 ## Guidelines “as a developer” 
 Developing Galaxy tools requires time investment, especially at the beginning to understand how Galaxy works and the architecture of the tools. The development procedure can vary depending on the origin of the analytical workflow idea which can be (i) existing code, a package, or a workflow implemented elsewhere, (ii) an idea from a user proposal, (iii) a published article or a personal need, and even (iv) an analytical procedure using originally several interfaced tools. When an analytical procedure was originally designed with atomisation and generalisation of elementary steps in mind, the process of developing Galaxy tools should take a lot less time. Main steps of the implementation of an analytical procedure on Galaxy as a developer are represented on figure 5.
 
- ![](https://github.com/ColineRoyaux/Galaxy_Templates/blob/main/Methods/Fig/DEV_guidelines_no_link_i.tif)
+ ![](https://github.com/ColineRoyaux/Galaxy_Templates/blob/main/Methods/Fig/DEV_guidelines_no_link_i.png)
 > Figure 5 - Decision tree and framework for Galaxy developers. Orange boxes represent actions, blue boxes represent possible situations one may encounter during the process and red boxes represent shareable steps where one could stop and still attain better reproducibility and FAIRness. Letters at the top left of boxes indicate which paragraph it refers to in the text.
 > Links: (1) https://toolshed.g2.bx.psu.edu (2) https://usegalaxy-eu.github.io/posts/2020/08/22/three-steps-to-galaxify-your-tool 
 > (3) https://github.com/galaxyecology 
