@@ -7,7 +7,7 @@ The Galaxy platform offers many options that can be explored using the guided to
 
 
 >Figure 4 - Decision tree and framework for Galaxy users relying on existing tools and workflows. The orange boxes represent actions. The blue boxes represent possible situations one may encounter during the procedure. The red boxes represent steps where one could stop, share the work, and then attain better reproducibility and FAIRness. Letters at the top left of boxes indicate which paragraph it refers to in the text.
-Links: (1) https://toolshed.g2.bx.psu.edu (2) https://usegalaxy-eu.github.io/posts/2020/08/22/three-steps-to-galaxify-your-tool 
+>Links: (1) https://toolshed.g2.bx.psu.edu (2) https://usegalaxy-eu.github.io/posts/2020/08/22/three-steps-to-galaxify-your-tool 
 (3) https://matrix.to (4) https://github.com/galaxyecology
 
 (a)	The first thing to do when starting an analysis on Galaxy is to look for tutorials on the Galaxy Training platform to benefit from others’ experience. One tutorial may be enough to set the tracks for the whole analytical procedure, but it is also possible to use sub-parts of tutorials and/or associate several tutorials to complete steps of the procedure. Numerous ready-to-use workflows are also available on the Galaxy servers (tab “Shared Data – Workflows”) or could be imported from WorkflowHub or Dockstore, one may find one or several workflows to complete its analysis. High-quality peer-reviewed Galaxy workflows are reported by the Intergalactic Workflow Commission (IWC, https://github.com/galaxyproject/iwc). Additionally, it is possible to seek for help by asking on the Matrix channel (https://gitter.im/Galaxy-Training-Network/Lobby) or by opening a topic on the Galaxy Help (https://help.galaxyproject.org).
@@ -72,7 +72,8 @@ Developing Galaxy tools requires time investment, especially at the beginning to
 (g)	The Galaxy community has made available a lot of documentation resources for tool development on the GTN Training platform (category “Development in Galaxy”; https://training.galaxyproject.org/training-material/topics/dev) and on the General Galaxy documentation (https://docs.galaxyproject.org; https://docs.galaxyproject.org/en/latest/dev/schema.html). 
 
 Galaxy tools have a common architecture (fig. 6). Each tool consists of an XML (Extensible Markup Language) wrapper which defines input file(s) and parameters that are presented to the end-user in the Galaxy web interface ("ToolName.xml" in fig. 6). Inputs provided through the interface can be processed with code in any computing language (“ExeToolName.r” in fig. 6). Outputs of the code are also specified in the XML file and are made available to the user in the Galaxy history at the end of the computation.
- 
+
+ [](https://github.com/ColineRoyaux/Galaxy_Templates/blob/main/Methods/Fig/fig6.png)
 > Figure 6 - Schematic representation of the simplified architecture of an example Galaxy tool using R language. From the input files and parameters provided by the user, the tool will launch an analytical procedure through the XML and R files to produce the outputs.
 
 At least one unit test is mandatory to make sure a tool works and produces the expected outputs. This also facilitates maintenance, as tests will indicate if the functionality is preserved after tool updates. To do so, the test is written in the XML file with all parameter settings, input and expected output files (stored in a sub-directory “test-data”) or characteristics of the expected output.
