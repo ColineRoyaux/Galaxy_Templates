@@ -73,7 +73,7 @@ Developing Galaxy tools requires time investment, especially at the beginning to
 
 Galaxy tools have a common architecture (fig. 6). Each tool consists of an XML (Extensible Markup Language) wrapper which defines input file(s) and parameters that are presented to the end-user in the Galaxy web interface ("ToolName.xml" in fig. 6). Inputs provided through the interface can be processed with code in any computing language (“ExeToolName.r” in fig. 6). Outputs of the code are also specified in the XML file and are made available to the user in the Galaxy history at the end of the computation.
 
- [](https://github.com/ColineRoyaux/Galaxy_Templates/blob/main/Methods/Fig/fig6.png)
+![](https://github.com/ColineRoyaux/Galaxy_Templates/blob/main/Methods/Fig/fig6.png)
 > Figure 6 - Schematic representation of the simplified architecture of an example Galaxy tool using R language. From the input files and parameters provided by the user, the tool will launch an analytical procedure through the XML and R files to produce the outputs.
 
 At least one unit test is mandatory to make sure a tool works and produces the expected outputs. This also facilitates maintenance, as tests will indicate if the functionality is preserved after tool updates. To do so, the test is written in the XML file with all parameter settings, input and expected output files (stored in a sub-directory “test-data”) or characteristics of the expected output.
