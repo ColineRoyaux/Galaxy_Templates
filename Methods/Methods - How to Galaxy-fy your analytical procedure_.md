@@ -112,7 +112,7 @@ It is impossible to prevent all possible misuses of software and such events occ
 ## Guidelines “as a trainer”
 Main steps of the implementation of an analytical procedure on Galaxy as a trainer are represented on figure 7.
 
-![](https://github.com/ColineRoyaux/Galaxy_Templates/blob/main/Methods/Fig/Contributor_guidelines_no_link_i.tif)
+![](https://github.com/ColineRoyaux/Galaxy_Templates/blob/main/Methods/Fig/Contributor_guidelines_no_link_i.png)
 > Figure 7 - Decision tree and framework for Galaxy trainers. Orange boxes represent actions, blue boxes represent possible situations one may encounter during the process and red boxes represent shareable steps where one could stop and still attain better reproducibility and FAIRness. Letters at the top left of boxes indicate which paragraph it refers to in the text.
 > Links: (1) https://training.galaxyproject.org/training-material/topics/contributing/tutorials/create-new-tutorial/tutorial.html (2) https://training.galaxyproject.org/training-material/topics/contributing/tutorials/create-new-tutorial/tutorial.html#create-the-skeleton-of-the-tutorial
 
